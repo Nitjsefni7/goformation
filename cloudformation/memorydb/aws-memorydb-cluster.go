@@ -14,7 +14,7 @@ import (
 type Cluster struct {
 
 	// ACLName AWS CloudFormation Property
-	// Required: false
+	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-memorydb-cluster.html#cfn-memorydb-cluster-aclname
 	ACLName string `json:"ACLName,omitempty"`
 
@@ -59,7 +59,7 @@ type Cluster struct {
 	MaintenanceWindow string `json:"MaintenanceWindow,omitempty"`
 
 	// NodeType AWS CloudFormation Property
-	// Required: false
+	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-memorydb-cluster.html#cfn-memorydb-cluster-nodetype
 	NodeType string `json:"NodeType,omitempty"`
 
